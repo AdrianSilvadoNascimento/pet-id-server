@@ -8,7 +8,7 @@
   ],
   "build": {
     "env": {
-      "NPM_RUN_SCRIPT": "server"
+      "NPM_RUN_SCRIPT": "start"
     }
   }
 }
