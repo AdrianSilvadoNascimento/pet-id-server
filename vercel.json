@@ -5,5 +5,10 @@
       "src": "/(.*)",
       "dest": "src/index.js"
     }
-  ]
+  ],
+  "build": {
+    "env": {
+      "NPM_RUN_SCRIPT": "server"
+    }
+  }
 }
