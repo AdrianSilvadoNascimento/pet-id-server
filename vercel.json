@@ -6,9 +6,10 @@
       "dest": "src/index.js"
     }
   ],
-  "build": {
-    "env": {
-      "NPM_RUN_SCRIPT": "start"
+  "builds": [
+    {
+      "src": "src/index.js",
+      "use": "@vercel/node"
     }
-  }
+  ]
 }
