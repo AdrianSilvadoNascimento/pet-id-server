@@ -24,7 +24,7 @@ model User {
   complement String @default("")
   uf String @default("")
   neighborhood String @default("")
-  plan String @default("")
+  plan String? @default("")
   userImage String? @default("")
   
   pets Pet[]
