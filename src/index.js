@@ -12,7 +12,7 @@ const PORT = env.PORT
 
 const app = express()
 app.use(cors())
-app.use(bodyParser.json({ limit: '10mb' }))
+app.use(bodyParser.json({ limit: '5mb' }))
 app.use(bodyParser.urlencoded({ extended: true }))
 
 app.use('/user', userRoutes)
