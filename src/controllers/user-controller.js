@@ -71,6 +71,7 @@ const loginUser = async (req, res) => {
 const registerUser = async (req, res) => {
   try {
     const body = req.body
+    console.log(body)
 
     const newUser = await prisma.user.findUnique({
       where: {
