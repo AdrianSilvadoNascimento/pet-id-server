@@ -13,8 +13,8 @@ const corsOptions = {
 router.post('/register-pet/:id', cors(corsOptions), petController.registerPet)
 router.post('/found-pet', cors(corsOptions), petController.registerFoundPet)
 router.delete('/delete-pet/:id', cors(corsOptions), petController.deletePet)
-router.get('/get-pets/:id', cors(corsOptions), petController.getPets)
-router.get('/get-pet/:id', cors(corsOptions), petController.getPet)
+router.get('/get-pets/:id', petController.getPets)
+router.get('/get-pet/:id', petController.getPet)
 router.put('/update-pet/:id', cors(corsOptions), petController.updatePet)
 
 module.exports = router
